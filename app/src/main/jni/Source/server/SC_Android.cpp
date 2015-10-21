@@ -34,7 +34,7 @@
 
 #include <queue>
 
-// TODO add your package name here
+// TODO BOOTSTRAP: add your package name here
 static const char * MY_JAVA_CLASS = "uk/co/garyhomewood/supercollider/android/bootstrap/SCAudio";
 static const char * OSC_MESSAGE_CLASS = "uk/co/garyhomewood/supercollider/android/bootstrap/OscMessage";
 
@@ -395,7 +395,7 @@ extern "C" jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved){
 		__android_log_print(ANDROID_LOG_DEBUG, "libscsynth", "JNI_Onload FindClass failed");
 		return JNI_ERR;
 	}
-    // TODO add your package name here
+    // TODO BOOSTRAP: add your package name here
 	static JNINativeMethod methods[] = {
 		// name, signature, function pointer
 		{ "scsynth_android_initlogging", "()V",   (void *) &scsynth_android_initlogging },
